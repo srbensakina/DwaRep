@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="oceanwhite">#EFDBCB</color>
+    <color name="Oceanlight">#4BB4DE</color>
+    <color name="Oceanormal">#3B8AC4</color>
+    <color name="Oceandark">#345DA7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#303030</color>
+</resources>
