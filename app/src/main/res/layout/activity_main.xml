@@ -31,5 +31,5 @@
         app:space_background_color="@color/space_white"
         app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
         app:space_item_icon_size="30dp"
-        app:space_item_text_size="@dimen/space_item_text_default_size" />
+        app:space_item_text_size="@dimen/space_item_text_default_size" tools:targetApi="lollipop"/>
 </RelativeLayout>
