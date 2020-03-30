@@ -30,12 +30,17 @@ public class MainActivity extends AppCompatActivity {
             Fragment selectedfragment;
             @Override
             public void onCentreButtonClick() {
+                getSupportFragmentManager().beginTransaction().replace(R.id.mainfrag,).commit();
+
             }
 
             @Override
             public void onItemClick(int itemIndex, String itemName) {
-                if(itemIndex==3){
-                    selectedfragment = new Profile();
+                switch (itemIndex){
+                    case 0 : selectedfragment = new Search(); break;
+                    case 1 : selectedfragment = new Chat(); break;
+                    case 2 : selectedfragment = new Notification(); break;
+                    case 3 : selectedfragment = new Profile(); break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.mainfrag,selectedfragment).commit();
             }
