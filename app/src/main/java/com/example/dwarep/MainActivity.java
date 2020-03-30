@@ -25,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_chat_black_24dp));
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_notifications_black_24dp));
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_person_black_24dp));
+        getSupportFragmentManager().beginTransaction().add(R.id.drawer_frame,new Home()).commit();
+
         navigationView.setCentreButtonSelectable(true);
         navigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             Fragment selectedfragment;
             @Override
             public void onCentreButtonClick() {
-
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_frame,new Home()).commit();
             }
 
             @Override
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2 : selectedfragment = new Notification(); break;
                     case 3 : selectedfragment = new Profile(); break;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.mainfrag,selectedfragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_frame,selectedfragment).commit();
             }
 
             @Override
