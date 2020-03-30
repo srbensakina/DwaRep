@@ -1,6 +1,7 @@
 package com.example.dwarep;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,14 +27,17 @@ public class MainActivity extends AppCompatActivity {
         navigationView.addSpaceItem(new SpaceItem("", R.drawable.ic_person_black_24dp));
         navigationView.setCentreButtonSelectable(true);
         navigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
+            Fragment selectedfragment;
             @Override
             public void onCentreButtonClick() {
             }
 
             @Override
             public void onItemClick(int itemIndex, String itemName) {
-                if(itemIndex==1){
+                if(itemIndex==3){
+                    selectedfragment = new Profile();
                 }
+                getSupportFragmentManager().beginTransaction().replace(R.id.mainfrag,selectedfragment).commit();
             }
 
             @Override
