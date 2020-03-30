@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
             Fragment selectedfragment;
             @Override
             public void onCentreButtonClick() {
-                getSupportFragmentManager().beginTransaction().replace(R.id.mainfrag,).commit();
 
             }
 
