@@ -1,2 +1,2 @@
 rootProject.name='DwaRep'
-include ':app'
+include ':app', ':spacelib'
