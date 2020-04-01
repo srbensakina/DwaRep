@@ -11,21 +11,20 @@
         android:id="@+id/drawer_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/space_naviguation">
-    </FrameLayout>
+        android:layout_above="@id/space_navigation" />
 
     <com.luseen.spacenavigation.SpaceNavigationView
-        android:id="@+id/space_naviguation"
+        android:id="@+id/space_navigation"
         android:elevation="70dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        app:active_centre_button_background_color="#F44336"
+        app:active_centre_button_background_color="@color/Oceandark"
         app:active_centre_button_icon_color="@color/space_white"
-        app:active_item_color="@color/colorAccent"
-        app:centre_button_color="@color/centre_button_color"
-        app:centre_button_icon="@drawable/ic_home_black_24dp"
+        app:active_item_color="@color/Oceanormal"
+        app:centre_button_color="@color/black"
+        app:centre_button_icon="@drawable/ic_search_black_24dp"
         app:inactive_centre_button_icon_color="@color/space_white"
         app:inactive_item_color="@color/black"
         app:space_background_color="@color/space_white"
