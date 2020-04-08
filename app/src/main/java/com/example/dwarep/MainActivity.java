@@ -24,18 +24,17 @@ public class MainActivity extends AppCompatActivity {
         navigationView.showIconOnly();
         getSupportFragmentManager().beginTransaction().add(R.id.drawer_frame,new Home()).commit();
         navigationView.setCentreButtonSelectable(true);
-        navigationView.setCentreButtonSelected();
         navigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             Fragment selected_fragment;
             @Override
             public void onCentreButtonClick() {
-                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_frame,new Home()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_frame,new Search()).commit();
             }
 
             @Override
             public void onItemClick(int itemIndex, String itemName) {
                 switch (itemIndex){
-                    case 0 : selected_fragment = new Search(); break;
+                    case 0 : selected_fragment = new Home(); break;
                     case 1 : selected_fragment = new Chat(); break;
                     case 2 : selected_fragment = new Notification(); break;
                     case 3 : selected_fragment = new Profile(); break;
