@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/drawer_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/space_navigation" >
+
+    </FrameLayout>
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space_navigation"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:active_centre_button_background_color="@color/colorPrimary"
+        app:active_centre_button_icon_color="@color/space_white"
+        app:active_item_color="@color/colorPrimary"
+        app:centre_button_color="@color/black"
+        app:centre_button_icon="@drawable/ic_search_black_24dp"
+        app:inactive_centre_button_icon_color="@color/space_white"
+        app:inactive_item_color="@color/black"
+        app:space_background_color="@color/space_white"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_icon_size="30dp"
+        app:space_item_text_size="@dimen/space_item_text_default_size" tools:targetApi="lollipop"/>
+</RelativeLayout>

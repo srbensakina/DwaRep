@@ -7,14 +7,14 @@ import com.luseen.spacenavigation.SpaceItem;
 import com.luseen.spacenavigation.SpaceNavigationView;
 import com.luseen.spacenavigation.SpaceOnClickListener;
 
-public class MainActivity extends AppCompatActivity {
+public class Logged extends AppCompatActivity {
 
     public SpaceNavigationView navigationView ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_logged);
         navigationView = findViewById(R.id.space_navigation);
         navigationView.initWithSaveInstanceState(savedInstanceState);
         navigationView.addSpaceItem(new SpaceItem("Home", R.drawable.ic_home_black_24dp));

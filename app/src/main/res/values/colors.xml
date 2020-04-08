@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F9F9F9</color>
-    <color name="colorPrimaryDark">#c6c6c6</color>
+    <color name="colorPrimary">#3b8ac4</color>
+    <color name="colorPrimaryDark">#D8345da7</color>
+    <color name="whiteprim">#F9F9F9</color>
+    <color name="whiteprimdark">#c6c6c6</color>
     <color name="colorAccent">#03A9F4</color>
     <color name="oceanwhite">#EFDBCB</color>
     <color name="Oceanlight">#4BB4DE</color>
-    <color name="Oceanormal">#3B8AC4</color>
-    <color name="Oceandark">#345DA7</color>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#303030</color>
+    <color name="BlueDarker">#3b8ac4</color>
+    <color name="darker">#D8345da7</color>
+
+    <color name="vert">#4CAF50</color>
 </resources>

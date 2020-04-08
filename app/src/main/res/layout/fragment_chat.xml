@@ -6,11 +6,18 @@
     tools:context=".Chat">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <include
+        layout="@layout/bar_layout"
+        android:id="@+id/toolbar"/>
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_centerInParent="true"
-        android:text="chat Fragment" />
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="352dp"
+        android:text="chat Fragment"
+        android:textSize="22sp" />
 
 </RelativeLayout>

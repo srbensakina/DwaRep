@@ -3,13 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Chat">
 
     <!-- TODO: Update blank fragment layout -->
-
+    <include
+        layout="@layout/bar_layout"
+        android:id="@+id/toolbar"/>
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_below="@id/toolbar"
         android:id="@+id/constraintlayout"
+        android:paddingTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -28,6 +33,7 @@
             app:layout_constraintEnd_toStartOf="@+id/searchbtn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:elevation="5dp"
             tools:targetApi="lollipop">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -55,7 +61,7 @@
             android:insetRight="0dp"
 
             android:insetBottom="0dp"
-            app:backgroundTint="@color/Oceandark"
+            app:backgroundTint="@color/colorPrimaryDark"
             app:icon="@drawable/ic_search_black_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,9 +71,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_below="@id/constraintlayout"
-        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
     </LinearLayout>
